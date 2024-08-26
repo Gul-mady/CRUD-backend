@@ -2,7 +2,10 @@ const express = require('express');
 const app = express();
 require('./database/connection');
 const cors = require('cors')
-app.use(cors())
+app.use(cors({
+    origin: 'https://lighthearted-naiad-dedec7.netlify.app/' // Replace with your frontend URL
+
+}))
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
