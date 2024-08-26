@@ -3,7 +3,7 @@ const app = express();
 require('./database/connection');
 const cors = require('cors')
 app.use(cors({
-    origin: 'https://lighthearted-naiad-dedec7.netlify.app/' // Replace with your frontend URL
+    origin: 'https://lighthearted-naiad-dedec7.netlify.app' // Ensure no trailing slash
 
 }))
 require('dotenv').config();
